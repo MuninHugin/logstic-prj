@@ -1,0 +1,112 @@
+.button-link {
+  z-index: 1;
+  position: relative;
+  min-width: 268px;
+  height: 59px;
+  padding: 21px 59px 21px 66px;
+  object-fit: contain;
+  border-radius: 5.2px;
+  background-color: var(--color-red);
+  border: 1px solid var(--color-red);
+  text-decoration: none;
+  font-family: Teko;
+  font-size: 146%;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43rem;
+  letter-spacing: 2.35px;
+  text-align: center;
+  color: var(--color-white);
+}
+.button-link::after {
+  z-index: 2;
+  position: absolute;
+  content: url("../img/header/arrow-right.png");
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.button-link:hover {
+  background: var(--color-white);
+  color: var(--color-red);
+}
+.button-link:hover::after {
+  z-index: 2;
+  position: absolute;
+  content: url("../img/header/arrow-right-red.png");
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.small-button-link {
+  z-index: 1;
+  position: relative;
+  width: 209px;
+  height: 48px;
+  padding: 17px 51px 19px 53px;
+  object-fit: contain;
+  object-fit: contain;
+  /* border-radius: 5.2px; */
+  background-color: var(--color-red);
+  border: 1px solid var(--color-red);
+  text-decoration: none;
+  font-family: Teko;
+  font-size: 105%;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43rem;
+  letter-spacing: 2.35px;
+  text-align: center;
+  color: var(--color-white);
+}
+.small-button-link::after {
+  z-index: 2;
+  position: absolute;
+  content: url("../img/header/arrow-right.png");
+  right: 30px;
+  top: 57%;
+  transform: translateY(-57%);
+  -webkit-transform: translateY(-57%);
+  -moz-transform: translateY(-57%);
+  -ms-transform: translateY(-57%);
+  -o-transform: translateY(-57%);
+}
+.small-button-link:hover {
+  background: var(--color-white);
+  color: var(--color-red);
+}
+.button-link:hover::after {
+  z-index: 2;
+  position: absolute;
+  content: url("../img/header/arrow-right-red.png");
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.small-button-link:hover::after {
+  z-index: 2;
+  position: absolute;
+  content: url("../img/header/arrow-right-red.png");
+  right: 30px;
+  top: 57%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}

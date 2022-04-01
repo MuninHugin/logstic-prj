@@ -1,0 +1,16 @@
+@import './vars.css';
+@import './base.css';
+@import './button.css';
+@import './header/header.css';
+@import './main/main.css';
+@import './footer/footer.css';
+@import './breakpoints.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: Futura;
+    src: url('../fonts/futura-md-bt-cufonfonts/futuram.ttf');
+}
+

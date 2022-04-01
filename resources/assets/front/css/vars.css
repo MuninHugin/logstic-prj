@@ -1,0 +1,16 @@
+:root {
+  --container-width: 100%;
+  --shadow-color: rgba(0, 0, 0, 0.03);
+  --color-black: #000;
+  --color-white: #fff;
+  --color-red: #f8733a;
+  --color-gray: #f5f5f5;
+  --color-blue: #0666b7;
+  --font-size: 16px;
+  --font-color-light: #4f4f4f;
+  --font-color-darker: #666666;
+  --font-color-dark: #3b3b3b;
+  --input-color: #e5e3e3;
+  --radio-color: #a3a3a3;
+  --border-gray: #d8d7d7;
+}

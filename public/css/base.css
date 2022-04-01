@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+*:hover {
+  outline: none;
+}
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: var(--font-size);
+  font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--font-color-light);
+  background: var(--color-white);
+}
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    justify-items: center;
+    box-shadow: 0 0 20px var(--shadow-color);
+    padding: 0;
+}
+.container.auth-container {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 15;
+    height: 100vh;
+    padding-top: 20vh;
+}
+.grid {
+  width: 1560px;
+  max-width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  justify-items: center;
+}
+.h2 {
+  font-family: Teko;
+  font-size: 375%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--font-color-dark);
+  opacity: 1;
+}
+.h2-smaller {
+  font-family: Teko;
+  font-size: 281%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--font-color-dark);
+  opacity: 1;
+}
+.h3 {
+  text-transform: uppercase;
+  margin-top: 35px;
+  font-family: Teko;
+  font-size: 156%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--font-color-darker);
+  margin-bottom: 0;
+}
+.h3-dark{
+  font-family: Teko;
+  font-size: 218%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--font-color-dark);
+}
+p {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 27px;
+  margin-bottom: 0;
+}
+.text {
+  font-family: Futura;
+  font-size: 110%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--font-color-light);
+}
+.text-upper {
+  font-family: Teko;
+  font-size: 110%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 2.5; */
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.big-text {
+  max-width: 900px;
+  margin-top: 28px;
+  font-family: Futura;
+  font-size: 137.5%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--font-color-light);
+}
+.small-text {
+  font-family: Futura;
+  font-size: 106%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.68;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--font-color-light);
+}
+.smaller-text {
+  margin-top: 0;
+  padding-top: 0;
+  font-family: Futura;
+  font-size: 87.5%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.68;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--font-color-light);
+}
+
+.margin-both {
+  margin: 0 70px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.red {
+  color: var(--color-red);
+}
+.white {
+  color: var(--color-white);
+}
+.blue {
+  color: var(--color-blue);
+  margin-top: 50px;
+  cursor: pointer;
+}
+.bottom-margin-none {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.star .material-icons {
+  color: var(--color-white);
+  font-size: 175%;
+}
+.text-upper .material-icons {
+  color: var(--color-red);
+  font-size: 175%;
+}
+.margin-top {
+  margin-top: 30px;
+}
+.row-between {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-between2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stripe::after {
+  content: "|";
+  margin: 0 20px;
+}
+.padding-both-vertical {
+  padding: 80px 10px;
+}
+.arrow-left {
+  position: relative;
+  font-family: Teko;
+  font-size: 30.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: 3.05px;
+  text-align: left;
+  padding-left: 30px;
+  color: var(--color-red);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.arrow-left::before {
+  position: absolute;
+  content: url(../img/header/arrow-right-red.png);
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  margin-left: -30px;
+  margin-top: 2px;
+}
+
+.arrow-right {
+  text-decoration: none;
+  position: relative;
+  font-family: Teko;
+  font-size: 30.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: 3.05px;
+  text-align: right;
+  color: var(--color-red);
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+.arrow-right::after {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 10px;
+  content: url(../img/header/arrow-right-red.png);
+}
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+}
+.price-table-h2 {
+  font-family: Teko;
+  font-size: 35px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--font-color-dark);
+}
+.border-red {
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-red);
+  margin-bottom: 30px;
+}
+.border-gray {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-gray);
+  margin-bottom: 30px;
+}
+.strong-text{
+  font-family: Teko;
+  font-size: 150%;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--font-color-dark);
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
