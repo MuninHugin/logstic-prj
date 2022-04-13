@@ -75,26 +75,16 @@ class PageController extends Controller
         $customs_clearance_destination = TableVars::where('slug', 'customs_clearance_destination')->value('value');
         $extra_tax_numbers = TableVars::where('slug', 'extra_tax_numbers')->value('value');
         $customs_duties = 0;
-        $eust = round(request('valueOfGoods') * 1.19 - request('valueOfGoods'), 2);
-        $aval_fee = round(($customs_duties + $eust) * 0.01, 2);
+        $eust = round(request('valueOfGoods') * 1.27 - request('valueOfGoods'), 2);
+        $aval_fee = round(($customs_duties + $eust) * 0.05, 2);
 
-//        $storefee = '';
-//        $shipping_to_destination = '';
-        $insurance = round((request('valueOfGoods') + $exw_charges + $oceanfreight + $customs_duties)*1.1*.45, 2);
+        $insurance = round((request('valueOfGoods') + $exw_charges + $oceanfreight + $customs_duties)*.75, 2);
         if($insurance <= 45) $insurance = 45;
 
-
-
-//        --- Main formulas ---
-//        $exw = $exw_charges + $oceanfreight + $local_charges_destination + $importhandling + $customs_clearance_destination + $extra_tax_numbers + $customs_duties + $eust + $aval_fee + $shipping_to_destination + $storefee + $insurance;
-//        $fca = $fca_charges + $oceanfreight + $local_charges_destination + $importhandling + $customs_clearance_destination + $extra_tax_numbers + $customs_duties + $eust + $aval_fee + $shipping_to_destination + $storefee + $insurance;
-//        $fob = $oceanfreight + $local_charges_destination + $importhandling + $customs_clearance_destination + $extra_tax_numbers + $customs_duties + $eust + $aval_fee + $shipping_to_destination + $storefee + $insurance;
         $cif = ($local_charges_destination + $local_charges_destination*.05) + $importhandling + $customs_clearance_destination + $extra_tax_numbers + $customs_duties + $eust + $aval_fee;
 
         $req = [
             'val_goods' => request('valueOfGoods'),
-//            'destination' => request('destination'),
-//            'eust' => $eust
             'products' => request('products'),
             'insurance' => $insurance
         ];
